@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Loja Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="left-links">
+            <a class="funciona" href="inicio.html"><strong>Início</strong></a>
+            <a class="sobre"href="portfoli.html">Portfólio</a>
+        </div>
+    </nav>
+    <div class="destaques">
+        <h2>Startups em Destaque</h2>
+    </div>
+    <div class="product-grid">
+        {% for product in products %}
+        <div class="product-item">
+            <h3>{{ product.name }}</h3>
+            <p>Problema: {{ product.problema }}</p>
+            <br>
+            <p>Solução: {{ product.solucao }}</p>
+            <br>
+            <a href="{{ url_for('product.product_detail', product_id=product.id) }}">Ver Detalhes</a>
+            <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
+                <input type="number" name="quantity" value="1" min="1">
+                <button type="submit">Investir</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

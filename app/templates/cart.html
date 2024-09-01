@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home.home') }}">Home</a>
+        <a href="{{ url_for('cart.view_cart') }}">Carrinho</a>
+    </header>
+    <div class="cart-container">
+        <h1>Seu Carrinho</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Preço Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in cart.items %}
+                <tr>
+                    <td>{{ item.product.name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>${{ item.product.price }}</td>
+                    <td>${{ item.get_total_price() }}</td>
+                    <td>
+                        <form action="{{ url_for('cart.remove_from_cart', product_id=item.product.id) }}" method="POST">
+                            <button type="submit">Remover</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="cart-total">
+            <p>Total: ${{ cart.get_total_price() }}</p>
+        </div>
+        <div class="cart-actions">
+            <a href="/">Continuar Comprando</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Nossa Loja Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
