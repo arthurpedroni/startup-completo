@@ -10,38 +10,14 @@ products = [
     ),
     Product(2, "MindGuide", "Acesso limitado a suporte de saúde mental, especialmente em momentos de necessidade urgente, e estigmatização da busca por ajuda profissional.", "Um assistente virtual que oferece suporte emocional instantâneo e discreto, utilizando técnicas de terapia para ajudar na gestão de saúde mental", "support@mindguide.com", "A saúde mental é fundamental, mas muitos enfrentam dificuldades para encontrar suporte quando mais precisam. O MindGuide é um assistente virtual que oferece suporte emocional instantâneo e discreto, utilizando técnicas de terapia comprovadas para ajudar na gestão da saúde mental. Disponível 24/7, o MindGuide quebra o estigma e oferece um espaço seguro e acessível para todos que precisam de ajuda. Com o MindGuide, o apoio emocional está sempre ao seu alcance, quando você mais precisa."        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
     ),
-    Product(3, "Action Figure Spider-Man", 29.95, 3, "Boneco articulado do Spider-Man, perfeito para colecionadores.", [
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-    ]),
-    Product(4, "Carro Hot Wheels", 9.99, 3, "Carro Hot Wheels edição limitada, modelo esportivo.", [
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-    ]),
-    Product(5, "Mouse Gamer RGB", 35.00, 3, "Mouse gamer com iluminação RGB e alta precisão.", [
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-    ]),
-    Product(6, "Cadeira de Escritório Ergonômica", 189.99, 3, "Cadeira de escritório ergonômica com suporte lombar ajustável.", [
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-    ])
+    Product(3, "EcoWardrobe", "A indústria da moda rápida contribui significativamente para o desperdício e a poluição ambiental, com roupas sendo descartadas rapidamente.", "Uma plataforma que permite o aluguel de roupas de alta qualidade, promovendo a reutilização e a sustentabilidade na moda.", "info@ecowardrobe.com", "A indústria da moda rápida está destruindo o meio ambiente com desperdício e poluição. O EcoWardrobe é a solução sustentável que você estava esperando. Nossa plataforma oferece aluguel de roupas de alta qualidade, permitindo que você desfrute das últimas tendências sem contribuir para o problema do desperdício. Ao promover a reutilização e a sustentabilidade, o EcoWardrobe transforma a maneira como você se veste, ajudando o planeta enquanto você fica na moda."
+    ),
+    Product(4, "LocalHarvest Hub", "Consumidores têm dificuldade em acessar alimentos frescos e locais, enquanto pequenos produtores lutam para alcançar mercados maiores.", "Um marketplace que conecta produtores locais com consumidores, facilitando o acesso a alimentos frescos e fortalecendo a economia local.", "hello@localharvesthub.com","Você quer acessar alimentos frescos e locais, mas muitas vezes enfrenta barreiras para encontrar o que precisa. O LocalHarvest Hub conecta diretamente pequenos produtores locais com consumidores que valorizam alimentos frescos e de qualidade. Nosso marketplace facilita a compra e venda de produtos locais, fortalecendo a economia regional e garantindo que você tenha acesso ao melhor que sua comunidade tem a oferecer. Com o LocalHarvest Hub, apoiar produtores locais e comer bem nunca foi tão fácil." 
+    ),
+    Product(5, "CollabFlow", "Equipes distribuídas enfrentam desafios na comunicação e no gerenciamento de projetos, resultando em baixa produtividade e falhas na execução.", "Uma plataforma de gerenciamento de projetos colaborativos que integra ferramentas de comunicação e organização para melhorar a eficiência da equipe.", "team@collabflow.com", "Equipes distribuídas enfrentam desafios constantes de comunicação e gerenciamento, resultando em baixa produtividade e falhas na execução. O CollabFlow é a solução definitiva para esses problemas. Nossa plataforma integra ferramentas de comunicação e organização em um único lugar, melhorando a eficiência da equipe e garantindo uma colaboração eficaz. Com o CollabFlow, seus projetos serão mais bem geridos e suas equipes mais produtivas, não importa onde estejam."
+    ),
+    Product(6, "SunEco Solutions", "Muitos lares não conseguem acessar soluções de energia renovável devido a custos iniciais elevados e complexidade na instalação.", "Fornecer sistemas acessíveis e fáceis de instalar para geração e armazenamento de energia renovável, ajudando a reduzir custos e emissões de carbono.","connect@suneco.com", "A transição para a energia renovável pode ser cara e complexa, mas não precisa ser assim. O SunEco Solutions oferece sistemas de energia renovável acessíveis e fáceis de instalar para residências, reduzindo custos e emissões de carbono. Nossos produtos tornam a geração e armazenamento de energia solar uma realidade simples e econômica, ajudando você a fazer a diferença no meio ambiente sem complicações. Com o SunEco Solutions, o futuro sustentável começa em sua casa."
+    )
 ]
 
 @home_bp.route('/')

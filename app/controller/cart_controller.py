@@ -21,6 +21,7 @@ def add_to_cart(product_id):
     if isinstance(cart, bytes):
         cart = pickle.loads(cart)
     quantity = int(request.form.get('quantity', 1))
+    print(quantity)
     cart.add_item(product, quantity)
     session['cart'] = pickle.dumps(cart)
     return redirect(url_for('cart.view_cart'))

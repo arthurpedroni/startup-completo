@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <header>
-        <a href="{{ url_for('home.home') }}">Home</a>
-        <a href="{{ url_for('cart.view_cart') }}">Carrinho</a>
-    </header>
-    <h3>{{ product.name }}</h3>
-    <p>Problema: {{ product.problema }}</p>
-    <br>
-    <p>Solução: {{ product.solucao }}</p>
-    <br>
-    <p>E-mail: {{ product.email }}</p>
-    <br>
-    <p>Pitch: {{ product.pitch}}</p>
-    <br>
-    <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
-        <input type="number" name="quantity" value="1" min="1">
-        <button type="submit">Investir</button>
-    </form>
+    <nav>
+            <a class="navstart1" href="{{ url_for('home.home') }}">Home</a>
+            <a class="navstart2" href="{{ url_for('cart.view_cart') }}">Carrinho</a>
+    </nav>
+    <div class="details">
+        <h3>{{ product.name }}</h3>
+        <p>Problema: {{ product.problema }}</p>
+        <br>
+        <p>Solução: {{ product.solucao }}</p>
+        <br>
+        <p>E-mail: {{ product.email }}</p>
+        <br>
+        <p>Pitch: {{ product.pitch}}</p>
+        <br>
+        <div class="botform">
+            <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
+                <input class="butinvest" type="number" name="quantity" value="1" min="1">
+                <button class="butinvest" type="submit">Investir</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

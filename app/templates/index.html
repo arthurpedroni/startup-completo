@@ -24,10 +24,10 @@
             <br>
             <p>Solução: {{ product.solucao }}</p>
             <br>
-            <a href="{{ url_for('product.product_detail', product_id=product.id) }}">Ver Detalhes</a>
+            <a class="cdetails" href=" {{ url_for('product.product_detail', product_id=product.id) }}">Ver Detalhes</a>
             <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
-                <input type="number" name="quantity" value="1" min="1">
-                <button type="submit">Investir</button>
+                <input class="butinvest" type="number" name="quantity" value="1" min="1">
+                <button class="butinvest" type="submit">Investir</button>
             </form>
         </div>
         {% endfor %}

@@ -14,6 +14,22 @@ nav a {
     text-align: justify;
     margin: 0 10px;
 }
+.navstart1{
+    cursor: pointer;
+    transition: background-color 0.5s, border-color 0.5s, font-size 0.5s;
+}
+.navstart1:hover{
+    font-size: 137%;
+    color: white;
+}
+.navstart2{
+    cursor: pointer;
+    transition: background-color 0.5s, border-color 0.5s, font-size 0.5s;
+}
+.navstart2:hover{
+    font-size: 137%;
+    color: white;
+}
 
 .left-links {
     float: left;
@@ -138,11 +154,12 @@ header input[type="text"] {
     transition: display 0.5s ease;
 }
 
+
 /* Existing styles... */
 
 .cart-container {
     padding: 20px;
-    background: white;
+    background-image: linear-gradient(to right,#ffde59,#ff914d);
     margin-top: 20px;
 }
 
@@ -152,6 +169,15 @@ header input[type="text"] {
     margin-bottom: 20px;
 }
 
+.details{
+    border: 1px solid #000000;
+    padding: 5%;
+    text-align: justify;
+}
+.botform{
+    text-align: center;
+    font-family: Andale Mono, monospace;
+}
 .cart-table {
     width: 100%;
     border-collapse: collapse;
@@ -160,7 +186,8 @@ header input[type="text"] {
 
 .cart-table th, .cart-table td {
     padding: 10px;
-    border: 1px solid #ddd;
+    background-image: linear-gradient(to right,#ffde59,#ff914d);
+    border: 1px solid #000000;
     text-align: left;
 }
 
@@ -172,9 +199,24 @@ header input[type="text"] {
     background-color: #f9f9f9;
 }
 
+.cdetails{
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+}
+
+.cdetails:hover{
+    color: #ffffff;
+}
+
+.butinvest{
+    font-family: Andale Mono, monospace;
+    border: 1px solid black;
+}
 .cart-table button {
     background-color: #d9534f;
     color: white;
+    font-family: Andale Mono, monospace;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
