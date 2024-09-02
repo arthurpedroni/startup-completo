@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Loja Online</title>
+    <title>StartupInvest</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <nav>
         <div class="left-links">
-            <a class="funciona" href="inicio.html"><strong>Início</strong></a>
-            <a class="sobre"href="portfoli.html">Portfólio</a>
+            <a class="funciona" href="{{ url_for('home.home') }}"><strong>Início</strong></a>
+            <a class="sobre" href="{{ url_for('cart.view_cart') }}">Carrinho</a>
         </div>
     </nav>
     <div class="destaques">
