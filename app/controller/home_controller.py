@@ -1,10 +1,8 @@
 from flask import Blueprint, render_template
-from app.model.category import Category
 from app.model.product import Product
 
 home_bp = Blueprint('home', __name__)
 
-categories = [Category(1, "Eletrônicos"), Category(2, "Livros"), Category(3, "Outros")]
 products = [
     Product(1, "EduCat AI", "Estudantes enfrentam dificuldades com métodos de aprendizado tradicionais, que muitas vezes não atendem às suas necessidades e estilos individuais.", "Uma plataforma de aprendizado personalizada que adapta o conteúdo e o ritmo de estudo para cada aluno, maximizando a retenção de conhecimento.", "contact@educatai.com", "No mundo atual, os métodos tradicionais de ensino frequentemente falham em atender às necessidades únicas de cada aluno. Com o EduCat AI, estamos revolucionando o aprendizado ao oferecer uma plataforma personalizada que adapta o conteúdo e o ritmo de estudo para cada estudante. Ao combinar inteligência artificial com metodologias pedagógicas avançadas, garantimos que cada aluno receba a atenção e os recursos necessários para maximizar sua retenção e sucesso acadêmico. EduCat AI não é apenas uma plataforma de aprendizado; é o futuro da educação personalizada."
     ),
@@ -22,4 +20,4 @@ products = [
 
 @home_bp.route('/')
 def home():
-    return render_template('index.html', categories=categories, products=Product.all_products)
+    return render_template('index.html', products=Product.all_products)
